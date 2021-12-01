@@ -1,0 +1,13 @@
+@import '~base/search';
+
+// make color options display as list
+.desktop {
+  display: block !important;
+}
+
+// change color for "active" since there is no checkmark
+.color-text {
+  &.active {
+    color: blueviolet;
+  }
+}
