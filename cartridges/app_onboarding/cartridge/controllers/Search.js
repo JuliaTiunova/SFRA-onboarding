@@ -9,9 +9,9 @@ var consentTracking = require('*/cartridge/scripts/middleware/consentTracking');
 server.extend(base);
 
 server.append('Refinebar', cache.applyDefaultCache, function (req, res, next) {
+  var checkMobileDevice = require('*/cartridge/scripts/helpers/checkMobileDevice');
+  var isMobile = checkMobileDevice.checkMobileDevice(req);
   var viewData = res.getViewData();
-  var userAgent = req.httpHeaders['user-agent'];
-  var isMobile = !!userAgent.match(/Mobile/);
   viewData.isMobile = isMobile;
   // set view data to use condition on a template
   res.setViewData(viewData);
