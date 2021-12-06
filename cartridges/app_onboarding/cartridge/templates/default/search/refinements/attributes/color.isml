@@ -1,0 +1,19 @@
+<li class="color-attribute ${!pdict.isMobile ? 'desktop' : ''}  ${!refinementValue.selectable ? 'disabled' : ''}">
+    <button data-href="${refinementValue.url}">
+        <isif condition="${pdict.isMobile}">
+            <span class="${refinementValue.swatchId} swatch-circle color-value swatch-mark
+              <isif condition="${refinementValue.selected && refinementValue.selectable}">selected</isif>
+              <isif condition="${!refinementValue.selectable}">disabled</isif>"
+            >
+            </span>
+            <span id="${refinementValue.swatchId}-assistive" class="sr-only selected-assistive-text">
+                ${refinementValue.selected && refinementValue.selectable ? Resource.msg('msg.assistive.selected.text', 'common', null) : ''}
+                ${refinementValue.title}
+            </span>
+        <iselse/>
+        <iscomment> change colors display and add hitCount </iscomment> 
+        <div class="color-text <isif condition="${refinementValue.selected && refinementValue.selectable}">active</isif>">
+            ${refinementValue.displayValue} (${refinementValue.hitCount})
+        </isif>
+    </button>
+</li>
