@@ -1,0 +1,12 @@
+@import "~wishlists/wishlist/wishlist";
+
+.wishlist {
+    &-amount {
+        font-weight: bold;
+
+        &-wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
