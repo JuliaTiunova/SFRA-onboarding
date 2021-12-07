@@ -3,7 +3,6 @@
         var assets = require('*/cartridge/scripts/assets.js');
         assets.addCss('/css/wishlist.css');
         assets.addJs('/js/wishlist.js');
-        assets.addJs('/js/updateWishlistItem.js');
         assets.addCss('/css/login.css');
         assets.addJs('/js/login.js');
     </isscript>

@@ -30,7 +30,8 @@
   },
   "paths": {
     "base": "../storefront-reference-architecture/cartridges/app_storefront_base/",
-    "wishlists": "../plugin_wishlists/cartridges/plugin_wishlists/"
+    "wishlists": "../plugin_wishlists/cartridges/plugin_wishlists/",
+    "lib-productList": "../lib_productlist/cartridges/lib_productlist/"
   },
   "browserslist": [
     "last 2 versions",
