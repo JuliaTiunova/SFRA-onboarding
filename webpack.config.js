@@ -4,7 +4,7 @@ var sgmfScripts = require('sgmf-scripts');
 
 module.exports = [
   {
-    mode: 'production',
+    mode: 'none',
     name: 'js',
     entry: sgmfScripts.createJsPath(),
     output: {
@@ -45,6 +45,10 @@ module.exports = [
                     path.resolve(
                       process.cwd(),
                       '../storefront-reference-architecture/node_modules/'
+                    ),
+                    path.resolve(
+                      process.cwd(),
+                      '../storefront-reference-architecture/node_modules/flag-icon-css/sass'
                     ),
                   ],
                 },
