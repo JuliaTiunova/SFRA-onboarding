@@ -29,7 +29,9 @@
     "sass-loader": "^7.0.3"
   },
   "paths": {
-    "base": "../storefront-reference-architecture/cartridges/app_storefront_base/"
+    "base": "../storefront-reference-architecture/cartridges/app_storefront_base/",
+    "wishlists": "../plugin_wishlists/cartridges/plugin_wishlists/",
+    "giftRegistry": "../plugin_giftregistry/cartridges/plugin_giftregistry/"
   },
   "browserslist": [
     "last 2 versions",
